@@ -20,14 +20,10 @@ class TweetController < UIViewController
   end
 
   def button_tapped
-    puts "I'm tapped!"
-  end
-
-  def handleTweetButtonTapped
     if TWTweetComposeViewController.canSendTweet
       tweet_vc = TWTweetComposeViewController.alloc.init
       tweet_vc.setInitialText("I just finished the first project in iOS SDK Development. #pragsios")
-      self.presentViewController(tweet_vc, animated:YES, completion:NULL)
+      self.presentViewController(tweet_vc, animated:true, completion:nil)
     else
       puts "Can't send tweet"
     end
