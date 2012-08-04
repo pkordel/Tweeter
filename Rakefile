@@ -7,4 +7,5 @@ Motion::Project::App.setup do |app|
   app.name = 'Tweeter'
   app.frameworks += ["Twitter"]
   app.identifier = 'com.polymagix.Twitter'
+  app.codesign_certificate = "iPhone Developer: Peter Kördel (3JTJ32QDCC)"
 end
